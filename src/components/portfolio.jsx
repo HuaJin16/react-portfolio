@@ -1,12 +1,24 @@
 import React from "react";
 
-//import stock
-import stock from "../img/image1.jpg";
-import stock1 from "../img/image2.jpg";
-import stock2 from "../img/image3.jpg";
-import stock3 from "../img/image4.jpg";
-import stock4 from "../img/image5.jpg";
-import stock5 from "../img/image6.jpg";
+import SOL1 from "../img/SOL1.png";
+import SOL2 from "../img/SOL2.png";
+import SOL3 from "../img/SOL3.png";
+import SOL4 from "../img/SOL4.png";
+import SOL5 from "../img/SOL5.png";
+import SOL6 from "../img/SOL6.png";
+import UI1 from "../img/UI1.png";
+import UI2 from "../img/UI2.png";
+import UI3 from "../img/UI3.png";
+import VUSPI1 from "../img/VUSPI Logo.png";
+import REUSE1 from "../img/Reuse1.png";
+import REUSE2 from "../img/Reuse2.png";
+import REUSE3 from "../img/Reuse3.png";
+import REUSE4 from "../img/Reuse4.png";
+import REUSE5 from "../img/Reuse5.png";
+import REUSE6 from "../img/Reuse6.png";
+import REUSE7 from "../img/Reuse7.png";
+import REUSE8 from "../img/Reuse8.png";
+import REUSE9 from "../img/Reuse9.png";
 
 class Portfolio extends React.Component {
   render() {
@@ -15,34 +27,75 @@ class Portfolio extends React.Component {
         <div className="container">
           <div className="row">
             <div className="col-sm-12">
-              <div className="title-box text-center">
+              <div
+                className="title-box text-center"
+                style={{ marginBottom: "32px" }}
+              >
                 <h3 className="title-a">Portfolio</h3>
                 <p className="subtitle-a">
-                  Incididunt nostrud id aute culpa excepteur pariatur consequat
-                  elit culpa nulla enim anim incididunt.
+                  A combination of my projects and research studies:
                 </p>
                 <div className="line-mf"></div>
               </div>
             </div>
           </div>
-          <div className="row">
-            <div className="col-md-4">
-              <div className="work-box">
-                <a href={stock} data-lightbox="gallery-vmarine">
-                  <div className="work-img">
-                    <img src={stock} alt="" className="img-fluid" />
+          <div
+            className="row"
+            style={{
+              display: "flex",
+              alignItems: "stretch",
+            }}
+          >
+            {/* Reuse Project */}
+            <div className="col-md-4" style={{ padding: "15px" }}>
+              <div
+                className="work-box"
+                style={{ display: "block", height: "100%" }}
+              >
+                <a
+                  href={REUSE1}
+                  data-lightbox="gallery-aguadeluz"
+                  style={{ display: "block", height: "100%" }}
+                >
+                  <div
+                    className="work-img"
+                    style={{
+                      borderBottom: "1px solid black",
+                      height: "70%",
+                      overflow: "hidden",
+                    }}
+                  >
+                    <img
+                      src={REUSE1}
+                      alt=""
+                      className="img-fluid"
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "contain",
+                      }}
+                    />
                   </div>
-                  <div className="work-content">
+                  <div
+                    className="work-content"
+                    style={{ paddingTop: "16px", paddingBottom: "8px" }}
+                  >
+                    <div className="row mb-2">
+                      <div className="col-12">
+                        <h2 className="w-title">Reuse, Vandy!</h2>
+                      </div>
+                    </div>
                     <div className="row">
-                      <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
+                      <div className="col-sm-9">
                         <div className="w-more">
                           <span className="w-ctegory">
-                            HTML5 CSS3 Bootstrap ReactJS
+                            Tech Stack: MERN (MongoDB, Express.js, React.js,
+                            Node.js), Firebase, HTML/CSS, JavaScript, Socket.io,
+                            Nodemailer
                           </span>
                         </div>
                       </div>
-                      <div className="col-sm-4">
+                      <div className="col-sm-3">
                         <div className="w-like">
                           <span className="ion-ios-plus-outline"></span>
                         </div>
@@ -50,184 +103,81 @@ class Portfolio extends React.Component {
                     </div>
                   </div>
                 </a>
-                <a
-                  href={stock1}
-                  data-lightbox="gallery-vmarine"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock2}
-                  data-lightbox="gallery-vmarine"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock3}
-                  data-lightbox="gallery-vmarine"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock4}
-                  data-lightbox="gallery-vmarine"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock5}
-                  data-lightbox="gallery-vmarine"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
+                {/* Hidden gallery images */}
+                {[
+                  REUSE2,
+                  REUSE3,
+                  REUSE4,
+                  REUSE5,
+                  REUSE6,
+                  REUSE7,
+                  REUSE8,
+                  REUSE9,
+                ].map((img, index) => (
+                  <a
+                    key={index}
+                    href={img}
+                    data-lightbox="gallery-aguadeluz"
+                    style={{ display: "none" }}
+                  >
+                    jsx-a11y/anchor-has-content warning
+                  </a>
+                ))}
               </div>
             </div>
-            <div className="col-md-4">
-              <div className="work-box">
-                <a href={stock} data-lightbox="gallery-aguadeluz">
-                  <div className="work-img">
-                    <img src={stock} alt="" className="img-fluid" />
+
+            {/* Virtual Laboratory Project */}
+            <div className="col-md-4" style={{ padding: "15px" }}>
+              <div
+                className="work-box"
+                style={{ display: "block", height: "100%" }}
+              >
+                <a
+                  href={SOL1}
+                  data-lightbox="gallery-aguadeluz"
+                  style={{ display: "block", height: "100%" }}
+                >
+                  <div
+                    className="work-img"
+                    style={{
+                      borderBottom: "1px solid black",
+                      height: "70%",
+                      overflow: "hidden",
+                    }}
+                  >
+                    <img
+                      src={SOL1}
+                      alt=""
+                      className="img-fluid"
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "contain",
+                      }}
+                    />
                   </div>
-                  <div className="work-content">
-                    <div className="row">
-                      <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
-                        <div className="w-more">
-                          <span className="w-ctegory">
-                            HTML5 CSS3 Bootstrap Webpack SmoothScrolling
-                            VanillaJS
-                          </span>{" "}
-                        </div>
-                      </div>
-                      <div className="col-sm-4">
-                        <div className="w-like">
-                          <span className="ion-ios-plus-outline"></span>
-                        </div>
+                  <div
+                    className="work-content"
+                    style={{ paddingTop: "16px", paddingBottom: "8px" }}
+                  >
+                    <div className="row mb-2">
+                      <div className="col-12">
+                        <h2 className="w-title">
+                          Developing a Virtual Laboratory to Investigate
+                          Human-System Trust
+                        </h2>
                       </div>
                     </div>
-                  </div>
-                </a>
-                <a
-                  href={stock1}
-                  data-lightbox="gallery-aguadeluz"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock2}
-                  data-lightbox="gallery-aguadeluz"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock3}
-                  data-lightbox="gallery-aguadeluz"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock4}
-                  data-lightbox="gallery-aguadeluz"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock5}
-                  data-lightbox="gallery-aguadeluz"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="work-box">
-                <a href={stock} data-lightbox="gallery-todo">
-                  <div className="work-img">
-                    <img src={stock} alt="" className="img-fluid" />
-                  </div>
-                  <div className="work-content">
                     <div className="row">
-                      <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
+                      <div className="col-sm-9">
                         <div className="w-more">
                           <span className="w-ctegory">
-                            HTML5 CSS3 Bootstrap Webpack ReactJS
-                          </span>
-                          {/*} / <span className="w-date">18 Sep. 2018</span>*/}
-                        </div>
-                      </div>
-                      <div className="col-sm-4">
-                        <div className="w-like">
-                          <span className="ion-ios-plus-outline"></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                <a
-                  href={stock1}
-                  data-lightbox="gallery-todo"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock2}
-                  data-lightbox="gallery-todo"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock3}
-                  data-lightbox="gallery-todo"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock4}
-                  data-lightbox="gallery-todo"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock5}
-                  data-lightbox="gallery-todo"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="work-box">
-                <a href={stock} data-lightbox="gallery-medlingos">
-                  <div className="work-img">
-                    <img src={stock} alt="" className="img-fluid" />
-                  </div>
-                  <div className="work-content">
-                    <div className="row">
-                      <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
-                        <div className="w-more">
-                          <span className="w-ctegory">
-                            Bootstrap ReactJS GoogleAPI
+                            Research Poster, Report, and Web Application
+                            Description/Images
                           </span>
                         </div>
                       </div>
-                      <div className="col-sm-4">
+                      <div className="col-sm-3">
                         <div className="w-like">
                           <span className="ion-ios-plus-outline"></span>
                         </div>
@@ -235,119 +185,72 @@ class Portfolio extends React.Component {
                     </div>
                   </div>
                 </a>
-                <a
-                  href={stock1}
-                  data-lightbox="gallery-medlingos"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock2}
-                  data-lightbox="gallery-medlingos"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock3}
-                  data-lightbox="gallery-medlingos"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock4}
-                  data-lightbox="gallery-medlingos"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock5}
-                  data-lightbox="gallery-medlingos"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
+                {/* Hidden gallery images */}
+                {[SOL2, SOL3, SOL4, SOL5, SOL6].map((img, index) => (
+                  <a
+                    key={index}
+                    href={img}
+                    data-lightbox="gallery-aguadeluz"
+                    style={{ display: "none" }}
+                  >
+                    jsx-a11y/anchor-has-content warning
+                  </a>
+                ))}
               </div>
             </div>
-            <div className="col-md-4">
-              <div className="work-box">
-                <a href={stock} data-lightbox="gallery-smth">
-                  <div className="work-img">
-                    <img src={stock} alt="" className="img-fluid" />
+
+            {/* LLMs in CS Education Project */}
+            <div className="col-md-4" style={{ padding: "15px" }}>
+              <div
+                className="work-box"
+                style={{ display: "block", height: "100%" }}
+              >
+                <a
+                  href={UI1}
+                  data-lightbox="gallery-aguadeluz"
+                  style={{ display: "block", height: "100%" }}
+                >
+                  <div
+                    className="work-img"
+                    style={{
+                      borderBottom: "1px solid black",
+                      height: "70%",
+                      overflow: "hidden",
+                    }}
+                  >
+                    <img
+                      src={UI1}
+                      alt=""
+                      className="img-fluid"
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "contain",
+                      }}
+                    />
                   </div>
-                  <div className="work-content">
-                    <div className="row">
-                      <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
-                        <div className="w-more">
-                          <span className="w-ctegory">MERN</span>
-                        </div>
-                      </div>
-                      <div className="col-sm-4">
-                        <div className="w-like">
-                          <span className="ion-ios-plus-outline"></span>
-                        </div>
+                  <div
+                    className="work-content"
+                    style={{ paddingTop: "16px", paddingBottom: "8px" }}
+                  >
+                    <div className="row mb-2">
+                      <div className="col-12">
+                        <h2 className="w-title">
+                          Integrating LLMs into CS Education Software
+                        </h2>
                       </div>
                     </div>
-                  </div>
-                </a>
-                <a
-                  href={stock1}
-                  data-lightbox="gallery-smth"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock2}
-                  data-lightbox="gallery-smth"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock3}
-                  data-lightbox="gallery-smth"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock4}
-                  data-lightbox="gallery-smth"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock5}
-                  data-lightbox="gallery-smth"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="work-box">
-                <a href={stock} data-lightbox="gallery-mf">
-                  <div className="work-img">
-                    <img src={stock} alt="" className="img-fluid" />
-                  </div>
-                  <div className="work-content">
                     <div className="row">
-                      <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
+                      <div className="col-sm-9">
                         <div className="w-more">
                           <span className="w-ctegory">
-                            HTML5 CSS3 Bootstrap MERN
+                            Vanderbilt's Learning & Diversity Department,
+                            Computer Science Department, and Information Systems
+                            Department at Haifa University
                           </span>
                         </div>
                       </div>
-                      <div className="col-sm-4">
+                      <div className="col-sm-3">
                         <div className="w-like">
                           <span className="ion-ios-plus-outline"></span>
                         </div>
@@ -355,40 +258,75 @@ class Portfolio extends React.Component {
                     </div>
                   </div>
                 </a>
+                {/* Hidden gallery images */}
+                {[UI2, UI3].map((img, index) => (
+                  <a
+                    key={index}
+                    href={img}
+                    data-lightbox="gallery-aguadeluz"
+                    style={{ display: "none" }}
+                  >
+                    jsx-a11y/anchor-has-content warning
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            {/* VUSPI Project */}
+            <div className="col-md-4" style={{ padding: "15px" }}>
+              <div
+                className="work-box"
+                style={{ display: "block", height: "100%" }}
+              >
                 <a
-                  href={stock1}
-                  data-lightbox="gallery-mf"
-                  style={{ display: "none" }}
+                  href={VUSPI1}
+                  data-lightbox="gallery-aguadeluz"
+                  style={{ display: "block", height: "100%" }}
                 >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock2}
-                  data-lightbox="gallery-mf"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock3}
-                  data-lightbox="gallery-mf"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock4}
-                  data-lightbox="gallery-mf"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock5}
-                  data-lightbox="gallery-mf"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
+                  <div
+                    className="work-img"
+                    style={{
+                      borderBottom: "1px solid black",
+                      height: "70%",
+                      overflow: "hidden",
+                    }}
+                  >
+                    <img
+                      src={VUSPI1}
+                      alt=""
+                      className="img-fluid"
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                      }}
+                    />
+                  </div>
+                  <div
+                    className="work-content"
+                    style={{ paddingTop: "16px", paddingBottom: "8px" }}
+                  >
+                    <div className="row mb-2">
+                      <div className="col-12">
+                        <h2 className="w-title">VUSPI</h2>
+                      </div>
+                    </div>
+                    <div className="row">
+                      <div className="col-sm-9">
+                        <div className="w-more">
+                          <span className="w-ctegory">
+                            Constructing a Student Price Index from student
+                            expenditure baskets of Vanderbilt Students
+                          </span>
+                        </div>
+                      </div>
+                      <div className="col-sm-3">
+                        <div className="w-like">
+                          <span className="ion-ios-plus-outline"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </a>
               </div>
             </div>

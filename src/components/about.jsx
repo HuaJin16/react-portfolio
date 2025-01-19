@@ -1,62 +1,164 @@
 import React from "react";
-import myImage from "../img/myImage.png";
+import myImage from "../img/portfolio.jpg";
+import {
+  FaJs,
+  FaPython,
+  FaHtml5,
+  FaCss3,
+  FaReact,
+  FaNodeJs,
+  FaDocker,
+  FaAws,
+  FaMapMarkerAlt,
+  FaFileDownload,
+  FaInstagram,
+  FaGithub,
+  FaLinkedin,
+} from "react-icons/fa";
+import { RiJavaLine } from "react-icons/ri";
+import { TbBrandCpp } from "react-icons/tb";
+import { SiExpress, SiMongodb } from "react-icons/si";
+import { GrMysql } from "react-icons/gr";
 
 class About extends React.Component {
   constructor() {
     super();
     this.state = {
       skills: [
-        { id: "HTML5_skill", content: "HTML5", porcentage: "80%", value: "80" },
-        { id: "CSS3_skill", content: "CSS3", porcentage: "75%", value: "75" },
         {
-          id: "JavaScript_skill",
+          id: "java",
+          content: "Java",
+          icon: <RiJavaLine />,
+        },
+        {
+          id: "javascript",
           content: "JavaScript",
-          porcentage: "90%",
-          value: "90"
-        },
-        { id: "PHP_skill", content: "PHP", porcentage: "70%", value: "70" },
-        {
-          id: "ReactJS_skill",
-          content: "ReactJS",
-          porcentage: "80%",
-          value: "80"
+          icon: <FaJs />,
         },
         {
-          id: "Python_skill",
+          id: "python",
           content: "Python",
-          porcentage: "75%",
-          value: "75"
+          icon: <FaPython />,
         },
         {
-          id: "VanillaJS_skill",
-          content: "VanillaJS",
-          porcentage: "85%",
-          value: "85"
+          id: "c++",
+          content: "C++",
+          icon: <TbBrandCpp />,
         },
         {
-          id: "Wordpress_skill",
-          content: "Wordpress",
-          porcentage: "80%",
-          value: "80"
-        }
+          id: "html",
+          content: "HTML",
+          icon: <FaHtml5 />,
+        },
+        {
+          id: "css",
+          content: "CSS",
+          icon: <FaCss3 />,
+        },
+        {
+          id: "react",
+          content: "React.js",
+          icon: <FaReact />,
+        },
+        {
+          id: "node",
+          content: "Node.js",
+          icon: <FaNodeJs />,
+        },
+        {
+          id: "express",
+          content: "Express.js",
+          icon: <SiExpress />,
+        },
+        {
+          id: "mongodb",
+          content: "MongoDB",
+          icon: <SiMongodb />,
+        },
+        {
+          id: "mysql",
+          content: "MySQL",
+          icon: <GrMysql />,
+        },
+        {
+          id: "docker",
+          content: "Docker",
+          icon: <FaDocker />,
+        },
+        { id: "aws", content: "AWS", icon: <FaAws /> },
+        {
+          id: "node",
+          content: "Node.js",
+          icon: <FaNodeJs />,
+        },
       ],
       about_me: [
         {
-          id: "first-p-about",
+          id: "about-paragrah",
           content:
-            "Lorem ipsum pariatur consectetur laboris occaecat nulla aliqua irure ad deserunt duis. Eiusmod nulla cupidatat labore sint sit aute dolore irure nostrud ut incididunt. Anim laborum reprehenderit labore magna ut dolore quis irure. Labore ea duis deserunt ullamco irure fugiat deserunt ut nisi ea minim proident. Nisi consectetur do non magna duis aliqua minim minim veniam. In occaecat minim qui consequat elit mollit consectetur non id tempor. Amet adipisicing occaecat tempor culpa quis est duis."
+            "Hello! I'm a Computer Science and Economics double major at Vanderbilt University with a passion for full-stack development and exploring the vast potential of cloud computing. While my current focus involves developing full-stack research applications, I'm also intrigued by learning how technological innovation and economic principles intersect and influence each other. I'm eager to apply my interdisciplinary knowledge to create innovative solutions and continue growing my expertise.",
         },
         {
-          id: "second-p-about",
-          content:
-            "Lorem ipsum pariatur consectetur laboris occaecat nulla aliqua irure ad deserunt duis. Eiusmod nulla cupidatat labore sint sit aute dolore irure nostrud ut incididunt. Anim laborum reprehenderit labore magna ut dolore quis irure. Labore ea duis deserunt ullamco irure fugiat deserunt ut nisi ea minim proident. Nisi consectetur do non magna duis aliqua minim minim veniam. In occaecat minim qui consequat elit mollit consectetur non id tempor. Amet adipisicing occaecat tempor culpa quis est duis."
+          id: "location",
+          content: (
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                color: "#FF6347",
+                fontSize: "16px",
+                fontWeight: "bold",
+              }}
+            >
+              <FaMapMarkerAlt
+                style={{
+                  fontSize: "20px",
+                  marginRight: "8px",
+                  verticalAlign: "middle",
+                }}
+              />
+              Nashville, TN
+            </div>
+          ),
         },
         {
-          id: "third-p-about",
-          content:
-            "Lorem ipsum pariatur consectetur laboris occaecat nulla aliqua irure ad deserunt duis. Eiusmod nulla cupidatat labore sint sit aute dolore irure nostrud ut incididunt. Anim laborum reprehenderit labore magna ut dolore quis irure. Labore ea duis deserunt ullamco irure fugiat deserunt ut nisi ea minim proident. Nisi consectetur do non magna duis aliqua minim minim veniam. In occaecat minim qui consequat elit mollit consectetur non id tempor. Amet adipisicing occaecat tempor culpa quis est duis."
-        }
-      ]
+          id: "resume-link",
+          content: (
+            <div>
+              <a
+                href="https://drive.google.com/file/d/15u7r4-TTCLbQ-uajltGlXEHwFKeqxj7J/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: "inline-block",
+                  padding: "10px 20px",
+                  fontSize: "16px",
+                  fontWeight: "bold",
+                  color: "#fff",
+                  backgroundColor: "#0078ff",
+                  borderRadius: "8px",
+                  textDecoration: "none",
+                  transition: "background-color 0.3s, transform 0.2s",
+                }}
+                onMouseEnter={(e) =>
+                  (e.target.style.backgroundColor = "#0056b3")
+                }
+                onMouseLeave={(e) =>
+                  (e.target.style.backgroundColor = "#0078ff")
+                }
+              >
+                <FaFileDownload
+                  style={{
+                    marginRight: "8px",
+                    fontSize: "18px",
+                  }}
+                />
+                Resume
+              </a>
+            </div>
+          ),
+        },
+      ],
     };
   }
 
@@ -67,60 +169,148 @@ class About extends React.Component {
           <div className="row">
             <div className="col-sm-12">
               <div className="box-shadow-full">
+                <div className="title-box-2">
+                  <h5 className="title-left">About Me</h5>
+                </div>
+
                 <div className="row">
-                  <div className="col-md-6">
-                    <div className="row">
-                      <div
-                        className="col-sm-6 col-md-5"
-                        style={{ margin: "0 auto" }}
-                      >
-                        <div
-                          className="about-img"
-                          style={{ textAlign: "center" }}
-                        >
-                          <img
-                            className="img-fluid rounded b-shadow-a"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div className="skill-mf">
-                      {/* <p className="title-s">Skill</p> */}
-                      {this.state.skills.map(skill => {
-                        return (
-                          <React.Fragment key={skill.id}>
-                            <span>{skill.content}</span>{" "}
-                            <span className="pull-right">
-                              {skill.porcentage}
-                            </span>
-                            <div className="progress">
-                              <div
-                                className="progress-bar"
-                                role="progressbar"
-                                style={{ width: skill.porcentage }}
-                                aria-valuenow={skill.value}
-                                aria-valuemin="0"
-                                aria-valuemax="100"
-                              ></div>
-                            </div>
-                          </React.Fragment>
-                        );
-                      })}
+                  <div className="col-md-4">
+                    <div className="about-img" style={{ textAlign: "center" }}>
+                      <img
+                        className="img-fluid rounded b-shadow-a"
+                        src={myImage}
+                        alt="Profile"
+                      />
                     </div>
                   </div>
-                  <div className="col-md-6">
-                    <div className="about-me pt-4 pt-md-0">
-                      <div className="title-box-2">
-                        <h5 className="title-left">About Me</h5>
-                      </div>
-                      {this.state.about_me.map(content => {
+
+                  <div className="col-md-8">
+                    <div className="about-me">
+                      {this.state.about_me.map((content) => {
                         return (
                           <p className="lead" key={content.id}>
                             {content.content}
                           </p>
                         );
                       })}
+
+                      <div className="socials" style={{ paddingTop: "0" }}>
+                        <ul>
+                          <li>
+                            <a
+                              href="https://www.instagram.com/hua.jin_"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <span
+                                className="ico-circle"
+                                style={{
+                                  display: "flex",
+                                  alignItems: "center",
+                                  justifyContent: "center",
+                                }}
+                              >
+                                <FaInstagram />
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://github.com/HuaJin16"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <span
+                                className="ico-circle"
+                                style={{
+                                  display: "flex",
+                                  alignItems: "center",
+                                  justifyContent: "center",
+                                }}
+                              >
+                                <FaGithub />
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://www.linkedin.com/in/huajin16/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <span
+                                className="ico-circle"
+                                style={{
+                                  display: "flex",
+                                  alignItems: "center",
+                                  justifyContent: "center",
+                                }}
+                              >
+                                <FaLinkedin />
+                              </span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="row">
+                  <div className="col-md-12">
+                    <p className="title-s">Tech Stack</p>
+                    <div
+                      className="skill-mf"
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <div
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          flexWrap: "wrap",
+                          gap: "20px",
+                          justifyContent: "flex-start",
+                        }}
+                      >
+                        {this.state.skills.map((skill) => (
+                          <div
+                            key={skill.id}
+                            style={{
+                              textAlign: "center",
+                              padding: "15px",
+                              borderRadius: "8px",
+                              backgroundColor: "#f8f9fa",
+                              minWidth: "120px",
+                              boxShadow: "0 2px 5px rgba(0,0,0,0.1)",
+                            }}
+                          >
+                            <span
+                              style={{
+                                fontSize: "24px",
+                                color: "#0078ff",
+                                marginBottom: "8px",
+                                display: "block",
+                              }}
+                            >
+                              {skill.icon}
+                            </span>
+                            <p
+                              style={{
+                                margin: "0",
+                                fontWeight: "500",
+                                fontSize: "14px",
+                              }}
+                            >
+                              {skill.content}
+                            </p>
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
