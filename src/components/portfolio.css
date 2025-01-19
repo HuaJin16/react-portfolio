@@ -1,0 +1,64 @@
+/* Responsive adjustments for portfolio */
+@media (max-width: 991.98px) {
+  .portfolio-mf .row {
+    justify-content: center;
+  }
+
+  .portfolio-mf .col-md-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .portfolio-mf .work-box {
+    margin-bottom: 20px;
+  }
+
+  .portfolio-mf .work-content {
+    padding: 10px;
+  }
+
+  .portfolio-mf .w-title {
+    font-size: 1.1rem;
+    line-height: 1.3;
+    margin-bottom: 8px;
+  }
+
+  .portfolio-mf .w-more {
+    font-size: 0.85rem;
+    overflow-wrap: break-word;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .portfolio-mf .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .portfolio-mf .work-box {
+    height: auto !important;
+  }
+
+  .portfolio-mf .work-content {
+    padding: 8px;
+  }
+
+  .portfolio-mf .w-title {
+    font-size: 1.05rem;
+    line-height: 1.2;
+    margin-bottom: 6px;
+  }
+
+  .portfolio-mf .w-more {
+    font-size: 0.9rem;
+  }
+}
+
+/* Ensure text doesn't overflow */
+.portfolio-mf .w-title,
+.portfolio-mf .w-more {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+}

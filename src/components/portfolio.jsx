@@ -19,6 +19,7 @@ import REUSE6 from "../img/Reuse6.png";
 import REUSE7 from "../img/Reuse7.png";
 import REUSE8 from "../img/Reuse8.png";
 import REUSE9 from "../img/Reuse9.png";
+import "./portfolio.css";
 
 class Portfolio extends React.Component {
   render() {
@@ -236,7 +237,7 @@ class Portfolio extends React.Component {
                     <div className="row mb-2">
                       <div className="col-12">
                         <h2 className="w-title">
-                          Integrating LLMs into CS Education Software
+                          Integrating LLMs into CS Education
                         </h2>
                       </div>
                     </div>
@@ -244,8 +245,8 @@ class Portfolio extends React.Component {
                       <div className="col-sm-9">
                         <div className="w-more">
                           <span className="w-ctegory">
-                            Vanderbilt's Learning & Diversity Department,
-                            Computer Science Department, and Information Systems
+                            Vanderbilt's Teaching, Learning & Diversity,
+                            Computer Science, and the Information Systems
                             Department at Haifa University
                           </span>
                         </div>
