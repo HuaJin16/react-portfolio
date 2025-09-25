@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.23c4ba3a.chunk.css",
-    "main.js": "/static/js/main.1aac017e.chunk.js",
-    "main.js.map": "/static/js/main.1aac017e.chunk.js.map",
+    "main.css": "/static/css/main.b308e947.chunk.css",
+    "main.js": "/static/js/main.88fd09b0.chunk.js",
+    "main.js.map": "/static/js/main.88fd09b0.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.351e9c47.js",
     "runtime-main.js.map": "/static/js/runtime-main.351e9c47.js.map",
     "static/css/2.d873f301.chunk.css": "/static/css/2.d873f301.chunk.css",
-    "static/js/2.0c178a90.chunk.js": "/static/js/2.0c178a90.chunk.js",
-    "static/js/2.0c178a90.chunk.js.map": "/static/js/2.0c178a90.chunk.js.map",
+    "static/js/2.003e530e.chunk.js": "/static/js/2.003e530e.chunk.js",
+    "static/js/2.003e530e.chunk.js.map": "/static/js/2.003e530e.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.7a1e01c38db42af101b8c5e10ef6448d.js": "/precache-manifest.7a1e01c38db42af101b8c5e10ef6448d.js",
+    "precache-manifest.164525e082d1ec98975c52489f0f46c1.js": "/precache-manifest.164525e082d1ec98975c52489f0f46c1.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.d873f301.chunk.css.map": "/static/css/2.d873f301.chunk.css.map",
-    "static/css/main.23c4ba3a.chunk.css.map": "/static/css/main.23c4ba3a.chunk.css.map",
-    "static/js/2.0c178a90.chunk.js.LICENSE.txt": "/static/js/2.0c178a90.chunk.js.LICENSE.txt",
+    "static/css/main.b308e947.chunk.css.map": "/static/css/main.b308e947.chunk.css.map",
+    "static/js/2.003e530e.chunk.js.LICENSE.txt": "/static/js/2.003e530e.chunk.js.LICENSE.txt",
     "static/media/Reuse1.png": "/static/media/Reuse1.a32dcd92.png",
     "static/media/Reuse2.png": "/static/media/Reuse2.07111a3b.png",
     "static/media/Reuse3.png": "/static/media/Reuse3.bd161bb9.png",
@@ -32,10 +32,9 @@
     "static/media/UI1.png": "/static/media/UI1.02fea1bd.png",
     "static/media/UI2.png": "/static/media/UI2.8c1763ae.png",
     "static/media/UI3.png": "/static/media/UI3.eb27ba77.png",
-    "static/media/VUSPI Logo.png": "/static/media/VUSPI Logo.721e0584.png",
     "static/media/earth.jpg": "/static/media/earth.67af05e1.jpg",
     "static/media/font-awesome.css": "/static/media/fontawesome-webfont.fee66e71.woff",
-    "static/media/ionicons.css": "/static/media/ionicons.c037dbbc.svg",
+    "static/media/ionicons.css": "/static/media/ionicons.621bd386.svg",
     "static/media/male.png": "/static/media/male.a82ab1cd.png",
     "static/media/male1.png": "/static/media/male1.3ec3891b.png",
     "static/media/portfolio.jpg": "/static/media/portfolio.43716112.jpg"
@@ -43,8 +42,8 @@
   "entrypoints": [
     "static/js/runtime-main.351e9c47.js",
     "static/css/2.d873f301.chunk.css",
-    "static/js/2.0c178a90.chunk.js",
-    "static/css/main.23c4ba3a.chunk.css",
-    "static/js/main.1aac017e.chunk.js"
+    "static/js/2.003e530e.chunk.js",
+    "static/css/main.b308e947.chunk.css",
+    "static/js/main.88fd09b0.chunk.js"
   ]
 }
