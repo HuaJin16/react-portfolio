@@ -103,12 +103,13 @@ class Contact extends React.Component {
                       </div>
                       <div className="more-info">
                         <p className="lead">
-                          I'm currently looking for software engineering internship opportunities!
-                          Whether you want to get in touch, collaborate on a project,
-                          or just say hi, I'd love to hear from you!
+                          I'm currently looking for software engineering new
+                          grad roles!
                           <br />
                           <br />
-                          Simply fill the from and send me an email :)
+                          If you know of any positions available, or if you have
+                          any questions, simply fill out the form to send me an
+                          email :)
                         </p>
                         {/* <!-- <ul class="list-ico">
                                 <li><span class="ion-ios-location"></span> 329 WASHINGTON ST BOSTON, MA 02108</li>
@@ -127,8 +128,7 @@ class Contact extends React.Component {
           <div className="container">
             <div className="row">
               <div className="col-sm-12">
-                <div className="copyright-box">
-                </div>
+                <div className="copyright-box"></div>
               </div>
             </div>
           </div>

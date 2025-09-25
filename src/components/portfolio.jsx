@@ -9,7 +9,7 @@ import SOL6 from "../img/SOL6.png";
 import UI1 from "../img/UI1.png";
 import UI2 from "../img/UI2.png";
 import UI3 from "../img/UI3.png";
-import VUSPI1 from "../img/VUSPI Logo.png";
+import ISIS1 from "../img/ISISlogo.png";
 import REUSE1 from "../img/Reuse1.png";
 import REUSE2 from "../img/Reuse2.png";
 import REUSE3 from "../img/Reuse3.png";
@@ -164,8 +164,8 @@ class Portfolio extends React.Component {
                     <div className="row mb-2">
                       <div className="col-12">
                         <h2 className="w-title">
-                          Developing a Virtual Laboratory to Investigate
-                          Human-System Trust
+                          How Trust in Cyber-Physical Systems Evolves Through
+                          Virtual Observation
                         </h2>
                       </div>
                     </div>
@@ -273,15 +273,16 @@ class Portfolio extends React.Component {
               </div>
             </div>
 
-            {/* VUSPI Project */}
+            {/* ISIS Project */}
             <div className="col-md-4" style={{ padding: "15px" }}>
               <div
                 className="work-box"
                 style={{ display: "block", height: "100%" }}
               >
                 <a
-                  href={VUSPI1}
-                  data-lightbox="gallery-aguadeluz"
+                  href="https://github.com/HuaJin16/FormulaMCP"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   style={{ display: "block", height: "100%" }}
                 >
                   <div
@@ -293,13 +294,16 @@ class Portfolio extends React.Component {
                     }}
                   >
                     <img
-                      src={VUSPI1}
-                      alt=""
+                      src={ISIS1}
+                      alt="ISIS Logo"
                       className="img-fluid"
                       style={{
-                        width: "100%",
+                        width: "90%",
                         height: "100%",
-                        objectFit: "cover",
+                        objectFit: "fill",
+                        display: "block",
+                        marginLeft: "auto",
+                        marginRight: "auto",
                       }}
                     />
                   </div>
@@ -309,15 +313,15 @@ class Portfolio extends React.Component {
                   >
                     <div className="row mb-2">
                       <div className="col-12">
-                        <h2 className="w-title">VUSPI</h2>
+                        <h2 className="w-title">FormulaMCP</h2>
                       </div>
                     </div>
                     <div className="row">
                       <div className="col-sm-9">
                         <div className="w-more">
                           <span className="w-ctegory">
-                            Constructing a Student Price Index from student
-                            expenditure baskets of Vanderbilt Students
+                            Leveraging Anthropic’s MCP to connect LLM workflows
+                            and Microsoft Research’s FORMULA 2.0
                           </span>
                         </div>
                       </div>

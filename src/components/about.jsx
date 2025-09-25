@@ -86,11 +86,6 @@ class About extends React.Component {
           icon: <FaDocker />,
         },
         { id: "aws", content: "AWS", icon: <FaAws /> },
-        {
-          id: "node",
-          content: "Node.js",
-          icon: <FaNodeJs />,
-        },
       ],
       about_me: [
         {
@@ -126,7 +121,7 @@ class About extends React.Component {
           content: (
             <div>
               <a
-                href="https://drive.google.com/file/d/15u7r4-TTCLbQ-uajltGlXEHwFKeqxj7J/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1u17Blvuyqj0Z91tNUp-AMs-wvd_jWnbk/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
